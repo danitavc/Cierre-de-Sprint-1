@@ -10,7 +10,7 @@ function cipher(){
 	//creo un array vacío en donde iré colocando cada letra cifrada
 	var txtCifrado =[];
 	//genero un ciclo for que recorrerá mi string y cifrará cada letra para luego insertarla dentro del array txtCifrado
-	for (var i = 0; i < longTxt; i++) {
+	for (var i = 0; i < longTxt; i++) {1
 		//cifro la letra convertida a ASCII mediante algortimo de cifrado César
 		var letraCifrada = ((txtCifrar[i].charCodeAt() - 65 + 33) %26 + 65);
 		//convierto letra en ASCII a normal
@@ -24,7 +24,7 @@ function cipher(){
 	alert(txtFinal);
 }
 
-function decipher(){
+function decipher(){ 
 
 	var txtDeCifrar = prompt('Ingresa el texto a descifrar, sólo ingresar letras.');
 	txtCifrar = txtDeCifrar.toUpperCase();
